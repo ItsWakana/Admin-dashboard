@@ -1,6 +1,6 @@
 :root {
     --main-body-clr: rgb(59, 170, 235);
-    --main-font-size: 18px;
+    --main-font-size: 16px;
     --sidebar-font-clr: rgb(252, 252, 252);
 }
 
@@ -18,8 +18,13 @@ h2 {
 
 h3 {
     margin: 0;
+    font-size: 18px;
 }
 
+.box,
+p {
+    line-height: 1.4;
+}
 .container {
     display: grid;
     grid-template-columns: 1fr 6fr;
@@ -73,12 +78,14 @@ h3 {
 }
 
 .content {
+    position: relative;
     background-color: burlywood;
     grid-column: 2;
     display: grid;
     grid-template-columns: 4fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 25px;
+    padding: 60px 25px 0;
 }
 
 .projects {
@@ -97,4 +104,9 @@ h3 {
     background-color: azure;
     padding: 0 15px;
 
+}
+
+h1.heading {
+    position: absolute;
+    top: 0;
 }
