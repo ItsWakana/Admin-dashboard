@@ -104,7 +104,7 @@ input[type=search] {
 .side-bar ul li {
     display: flex;
     align-items: center;
-    padding: 10px 30px 10px;
+    padding: 10px 30px 10px 0;
     gap: 20px;
     position: relative;
 }
@@ -115,19 +115,18 @@ input[type=search] {
     height: 3px;
     background-color: var(--left-border-clr);
     position: absolute;
-    left: 31px;
+    left: 0;
     bottom: -3px;
     transition: 500ms;
 }
 
 .side-bar ul li:hover::after {
-    width: 88.5%;
+    width: 100%;
 }
 
-/* .side-bar ul li:hover {
+.side-bar ul li:hover {
     cursor: pointer;
-    background-color: var(--left-border-clr);
-} */
+}
 
 .side-bar > h1 {
     display: flex;
@@ -139,7 +138,7 @@ input[type=search] {
 }
 
 .side-bar > h1 > img {
-    margin-left: 16px;
+    margin-left: -13px;
 }
 
 .content {
