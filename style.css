@@ -1,11 +1,11 @@
 :root {
-    --main-body-clr: rgb(59, 170, 235);
-    --content-body-clr: rgb(215, 231, 236);
+    --main-body-clr: #26ffbe;
+    --content-body-clr: #e6fff4;
     --section-article-clr: white;
-    --main-font-size: 16px;
-    --sidebar-font-clr: rgb(252, 252, 252);
+    --main-font-size: 17px;
+    --font-clr: #1e2723;
 
-    --left-border-clr: orange;
+    --left-border-clr: #4cd4ff;
 }
 
 body {
@@ -34,7 +34,7 @@ p {
 }
 .container {
     display: grid;
-    grid-template-columns: 1fr 6fr;
+    grid-template-columns: 1fr 5fr;
 }
 
 .side-bar {
@@ -42,11 +42,11 @@ p {
     flex-direction: column;
     gap: 20px;
     background-color: var(--main-body-clr);
-    color: var(--sidebar-font-clr);
-    font-weight: 700;
+    font-weight: 800;
     line-height: 1.8;
     grid-row: span 4;
     padding-left: 3rem;
+    color: var(--font-clr);
 }
 
 .header {
@@ -145,4 +145,12 @@ input[type=search] {
 h1.heading {
     position: absolute;
     top: 0;
+}
+
+button[type=submit] {
+    border: none;
+    background-color: var(--main-body-clr);
+    border-radius: 20px;
+    padding: 10px 25px;
+    font-weight: 600;
 }
