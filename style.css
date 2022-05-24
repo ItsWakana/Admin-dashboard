@@ -104,6 +104,10 @@ input[type=search] {
 
 }
 
+.side-bar img {
+    fill: white;
+}
+
 .side-bar > h1 > img {
     margin-left: -13px;
 }
