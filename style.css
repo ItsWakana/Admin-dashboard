@@ -28,7 +28,6 @@ p {
 .container {
     display: grid;
     grid-template-columns: 1fr 6fr;
-    grid-template-rows: 1fr 7fr;
 }
 
 .side-bar {
@@ -80,17 +79,16 @@ p {
 .content {
     position: relative;
     background-color: burlywood;
-    grid-column: 2;
     display: grid;
     grid-template-columns: 4fr 1fr;
-    grid-template-rows: 1fr 1fr;
     gap: 25px;
     padding: 60px 25px 0;
 }
 
 .projects {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-row: span 2;
     gap: 25px;
 }
 
@@ -100,10 +98,16 @@ p {
     background-color: azure;
 }
 
-.announcements .right-side-box {
+.content .right-side-box {
     background-color: azure;
     padding: 0 15px;
 
+}
+
+.content > .trending {
+    position: relative;
+    /* margin-top: 60px; */
+    grid-column: 2;
 }
 
 h1.heading {
