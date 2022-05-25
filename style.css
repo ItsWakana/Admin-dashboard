@@ -15,6 +15,7 @@ body {
     font-size: var(--main-font-size);
     font-family: Arial, Helvetica, sans-serif;
     height: 100vh;
+    min-width: 900px;
 }
 
 h1,
@@ -48,10 +49,11 @@ p {
     padding-left: 3rem;
     color: var(--font-clr);
     box-shadow: var(--main-body-clr) 10px 10px 10px -10px;
+    min-width: 200px;
 }
 
 .header {
-    padding: 1.9rem 4rem 2rem;
+    padding: 1.9rem 3rem 2rem;
     display: flex;
     flex-direction: column;
     gap: 3rem;
@@ -83,11 +85,14 @@ input[type=search]:focus {
 
 .user-panel .user-greeting {
     display: flex;
+    align-items: center;
     gap: 20px;
 }
 
 .search-panel div:nth-child(2) {
     display: flex;
+    align-items: center;
+    flex-shrink:0;
     gap: 20px;
 }
 
@@ -192,3 +197,22 @@ button[type=submit]:hover {
     cursor: pointer;
     background-color: #8ee5ff;
 }
+
+.profile-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: #1e2527;
+}
+
+.hello > div:first-child {
+    font-weight: bold;
+}
+.profile-name {
+    font-weight: bold;
+}
+.profile-name.bigger {
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
