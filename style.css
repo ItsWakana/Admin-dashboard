@@ -177,12 +177,20 @@ input[type=search]:focus {
 
 .content > .trending {
     position: relative;
+    margin-top: 25px;
     grid-column: 2;
 }
 
 h1.heading {
     position: absolute;
     top: 0;
+}
+
+.trending .heading-row-2 {
+    position: absolute;
+    top: -40px;
+    margin: 0;
+    padding: 0;
 }
 
 button[type=submit] {
@@ -211,8 +219,21 @@ button[type=submit]:hover {
 .profile-name {
     font-weight: bold;
 }
+
+.profile-name.smaller:hover {
+    cursor: pointer;
+}
 .profile-name.bigger {
     font-weight: bold;
     font-size: 1.8rem;
+}
+
+.notif {
+    transition: transform 0.5s;
+}
+
+.notif:hover {
+    transform: rotate(20deg);
+    cursor: pointer;
 }
 
